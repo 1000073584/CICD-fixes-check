@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
+import StudentReducer from '../views/Student/store/StudentSlice'
 import { createLogger } from 'redux-logger'
 import notificationReducer from '../middleware/notification/store/notificationSlice'
 let middlewares = []
@@ -11,6 +12,7 @@ if (process.env.NODE_ENV === `development`) {
 export default configureStore({
     reducer: {
         notification: notificationReducer,
+        Student: StudentReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(middlewares),
