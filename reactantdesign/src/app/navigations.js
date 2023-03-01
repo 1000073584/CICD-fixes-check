@@ -3,6 +3,12 @@ export const navigations = [
         name: 'Entities',
         path: '/',
         icon: 'dashboard',
-        children: []
+        children: [
+            {
+                name: 'Teacher',
+                path: '/Teacher',
+                iconText: 'A',
+            },
+        ],
     },
 ]
