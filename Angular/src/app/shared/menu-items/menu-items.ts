@@ -9,6 +9,7 @@ export interface Menu {
 
 const MENUITEMS = [
   { state: 'home', name: 'Entities', type: 'link', icon: 'web' },
+    { state: 'list-employee', name: 'Employee', type: 'link', icon: 'view_list' },
 ];
 
 @Injectable()
