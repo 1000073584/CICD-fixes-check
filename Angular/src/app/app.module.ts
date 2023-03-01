@@ -17,6 +17,9 @@ import { DemoMaterialModule } from './demo-material-module';
 
 import { SharedModule } from './shared/shared.module';
 import { SpinnerComponent } from './shared/spinner.component';
+import { AddEmployeeComponent } from "./employee/add-employee/add-employee.component";
+import { EditEmployeeComponent } from "./employee/edit-employee/edit-employee.component";
+import { ListEmployeeComponent } from "./employee/list-employee/list-employee.component";
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SpinnerComponent } from './shared/spinner.component';
     AppHeaderComponent,
     SpinnerComponent,
     AppSidebarComponent,
-  ],
+        AddEmployeeComponent,
+        EditEmployeeComponent,
+        ListEmployeeComponent
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
